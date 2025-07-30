@@ -16,7 +16,7 @@ import UserManagement from "./components/Admin/UserManagement";
 import OrderManagement from "./components/Admin/OrderManagement";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000';
-const API = `${BACKEND_URL}/api`;
+const API = "https://manvi-backend.vercel.app/api";
 
 // Debug logging
 console.log('BACKEND_URL:', BACKEND_URL);
