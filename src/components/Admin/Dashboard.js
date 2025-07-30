@@ -32,9 +32,9 @@ const Dashboard = () => {
 
       // Fetch statistics
       const [usersRes, productsRes, ordersRes] = await Promise.all([
-        axios.get('http://localhost:5000/api/auth/users?limit=1', config),
-        axios.get('http://localhost:5000/api/products?limit=1', config),
-        axios.get('http://localhost:5000/api/orders?limit=1', config)
+        axios.get('https://manvi-backend.vercel.app/api/auth/users?limit=1', config),
+        axios.get('https://manvi-backend.vercel.app/api/products?limit=1', config),
+        axios.get('https://manvi-backend.vercel.app/api/orders?limit=1', config)
       ]);
 
       setStats({
