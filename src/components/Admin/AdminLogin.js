@@ -17,7 +17,7 @@ const AdminLogin = () => {
     setError('');
 
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/login', credentials);
+      const response = await axios.post('https://manvi-backend.vercel.app/api/auth/login', credentials);
       
       if (response.data.success) {
         localStorage.setItem('token', response.data.token);
